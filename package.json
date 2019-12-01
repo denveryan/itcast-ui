@@ -1,7 +1,9 @@
 {
-  "name": "hm-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "itcast-ui",
+  "version": "1.0.0",
+  "private": false,
+  "author": {"name": "胡聪聪"},
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
