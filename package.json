@@ -1,13 +1,14 @@
 {
   "name": "itcast-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "author": {"name": "胡聪聪"},
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.4.3",

@@ -2,10 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 
 // 导入组件库
-import { ColorPicker } from './../packages'
-// 注册组件库
-// console.log(UI)
-Vue.use(ColorPicker)
+import HmUI from './../packages'
+Vue.use(HmUI)
 
 Vue.config.productionTip = false
 

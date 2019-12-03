@@ -1,5 +1,5 @@
 <template>
-  <color-picker v-model="color"></color-picker>
+  <hm-button>按钮</hm-button>
 </template>
 
 <script>
