@@ -1,6 +1,9 @@
 <template>
   <button
-    class="el-button"
+    class="hm-button"
+    :class="[
+      `hm-button--${type}`
+    ]"
   >
     <span><slot></slot></span>
   </button>
@@ -8,12 +11,18 @@
 
 <script>
 export default {
-  name: 'HmButton'
+  name: 'HmButton',
+  props: {
+    type: {
+      type: String,
+      default: 'default'
+    }
+  }
 }
 </script>
 
-<style lang='scss' scoped>
-.el-button {
+<style lang='scss'>
+.hm-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -40,6 +49,63 @@ export default {
     color: #409eff;
     border-color: #c6e2ff;
     background-color: #ecf5ff;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+
+    &:hover,
+    &:focus {
+      background: #66b1ff;
+      border-color: #66b1ff;
+      color: #fff;
+    }
+  }
+  &--success {
+    color: #fff;
+    background-color: #67c23a;
+    border-color: #67c23a;
+    &:hover,
+    &:focus {
+      background: #85ce61;
+      border-color: #85ce61;
+      color: #fff;
+    }
+  }
+  &--info {
+    color: #fff;
+    background-color: #909399;
+    border-color: #909399;
+    &:hover,
+    &:focus {
+      background: #a6a9ad;
+      border-color: #a6a9ad;
+      color: #fff;
+    }
+  }
+  &--warning {
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+    &:hover,
+    &:focus {
+      background: #ebb563;
+      border-color: #ebb563;
+      color: #fff;
+    }
+  }
+  &--danger {
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+    &:hover,
+    &:focus {
+      background: #f78989;
+      border-color: #f78989;
+      color: #fff;
+    }
   }
 }
 </style>

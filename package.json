@@ -1,9 +1,15 @@
 {
   "name": "itcast-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
+  "description": "基于vue-cli3，参考element-ui封装的一个UI组件库",
   "private": false,
   "author": {"name": "胡聪聪"},
-  "license": "MIT",
+  "license": "ISC",
+  "main": "lib/itcast-ui.umd.min.js",
+  "bugs": {
+    "url": "https://github.com/hucongcong/itcast-ui/issues"
+  },
+  "homepage": "https://github.com/hucongcong/itcast-ui#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
