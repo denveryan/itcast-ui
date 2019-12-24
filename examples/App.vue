@@ -16,6 +16,14 @@
       <hm-button plain type="warning">按钮</hm-button>
       <hm-button plain type="danger">按钮</hm-button>
     </div>
+    <div class="row">
+      <hm-button round plain>按钮</hm-button>
+      <hm-button round plain type="primary">按钮</hm-button>
+      <hm-button round plain type="success">按钮</hm-button>
+      <hm-button round plain type="info">按钮</hm-button>
+      <hm-button round plain type="warning">按钮</hm-button>
+      <hm-button round plain type="danger">按钮</hm-button>
+    </div>
   </div>
 </template>
 

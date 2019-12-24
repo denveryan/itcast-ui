@@ -4,7 +4,8 @@
     :class="[
       `hm-button--${type}`,
       {
-        'is-plain': plain
+        'is-plain': plain,
+        'is-round': round
       }
     ]"
   >
@@ -24,6 +25,11 @@ export default {
     },
     // 是否是朴素按钮
     plain: {
+      type: Boolean,
+      default: false
+    },
+    // 是否是圆角按钮
+    round: {
       type: Boolean,
       default: false
     }
@@ -179,5 +185,12 @@ export default {
       }
     }
   }
+
+  // 圆角
+  &.is-round {
+    border-radius: 20px;
+    padding: 12px 23px;
+  }
 }
+
 </style>
