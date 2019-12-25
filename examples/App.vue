@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <!-- <div class="row">
       <hm-button>按钮</hm-button>
       <hm-button type="primary">按钮</hm-button>
       <hm-button type="success">按钮</hm-button>
@@ -23,7 +23,18 @@
       <hm-button round plain type="info">按钮</hm-button>
       <hm-button round plain type="warning">按钮</hm-button>
       <hm-button round plain type="danger">按钮</hm-button>
+    </div> -->
+    <div class="row">
+      <hm-button icon="el-icon-check" circle plain></hm-button>
+      <hm-button icon="el-icon-check" circle plain type="primary"></hm-button>
+      <hm-button icon="el-icon-check" circle plain type="success"></hm-button>
+      <hm-button icon="el-icon-check" circle plain type="info"></hm-button>
+      <hm-button icon="el-icon-check" circle plain type="warning"></hm-button>
+      <hm-button icon="el-icon-check" circle plain type="danger"></hm-button>
     </div>
+
+    <!-- 测试对话框 -->
+    <!-- <hm-dialog></hm-dialog> -->
   </div>
 </template>
 

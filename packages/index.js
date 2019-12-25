@@ -1,10 +1,14 @@
 // 导入颜色选择器组件
 import ColorPicker from './color-picker'
 import Button from './button'
+import Dialog from './dialog'
+import './fonts/font.scss'
 // 存储组件列表
 const components = [
   ColorPicker,
-  Button
+  Button,
+  Dialog
+
 ]
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function (Vue) {
@@ -22,5 +26,6 @@ export default {
   install,
   // 以下是具体的组件列表
   ColorPicker,
-  Button
+  Button,
+  Dialog
 }

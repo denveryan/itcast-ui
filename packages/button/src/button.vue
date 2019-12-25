@@ -1,17 +1,20 @@
 <template>
   <button
     class="hm-button"
+    :disabled="disabled"
     :class="[
       `hm-button--${type}`,
       {
         'is-plain': plain,
-        'is-round': round
+        'is-round': round,
+        'is-circle': circle,
+        'is-disabled': disabled
       }
     ]"
   >
-    <span>
-      <slot></slot>
-    </span>
+    <!-- 字体图标的支持 -->
+    <i :class="icon" v-if="icon"></i>
+    <span><slot></slot></span>
   </button>
 </template>
 
@@ -32,6 +35,18 @@ export default {
     round: {
       type: Boolean,
       default: false
+    },
+    circle: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    icon: {
+      type: String,
+      default: ''
     }
   }
 }
@@ -190,6 +205,10 @@ export default {
   &.is-round {
     border-radius: 20px;
     padding: 12px 23px;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 12px;
   }
 }
 
