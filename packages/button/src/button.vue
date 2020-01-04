@@ -1,6 +1,7 @@
 <template>
   <button
     class="hm-button"
+    @click="handleClick"
     :disabled="disabled"
     :class="[
       `hm-button--${type}`,
@@ -47,6 +48,11 @@ export default {
     icon: {
       type: String,
       default: ''
+    }
+  },
+  methods: {
+    handleClick (e) {
+      this.$emit('click', e)
     }
   }
 }
