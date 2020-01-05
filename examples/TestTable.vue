@@ -1,9 +1,7 @@
 <template>
   <div>
-    <!-- <hm-input placeholder="请输入用户名" aa="bb" @keyup.enter="fn" @blur="fn1"></hm-input><br>
-    <hm-input placeholder="请输入用户名" type="password"></hm-input><br>
-    <hm-input placeholder="请输入用户名" disabled></hm-input><br> -->
-    <hm-input placeholder="请输入用户名" type="password" v-model="username" show-password></hm-input><br>
+    <hm-switch v-model="value" name="gender"></hm-switch>
+    <hm-switch v-model="value" name="gender" active-color="#13ce66" inactive-color="#ff4949">></hm-switch>
   </div>
 </template>
 
@@ -11,7 +9,14 @@
 export default {
   data () {
     return {
-      username: ''
+      username: '',
+      name: '1',
+      value: true
+    }
+  },
+  methods: {
+    fn () {
+      console.log(123)
     }
   }
 }

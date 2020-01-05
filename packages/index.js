@@ -3,14 +3,19 @@ import ColorPicker from './color-picker'
 import Button from './button'
 import Dialog from './dialog'
 import Input from './input'
+import Checkbox from './checkbox'
+import Radio from './radio'
+import Switch from './switch'
 import './fonts/font.scss'
 // 存储组件列表
 const components = [
   ColorPicker,
   Button,
   Dialog,
-  Input
-
+  Input,
+  Checkbox,
+  Radio,
+  Switch
 ]
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function (Vue) {
@@ -30,5 +35,8 @@ export default {
   ColorPicker,
   Button,
   Dialog,
-  Input
+  Input,
+  Checkbox,
+  Radio,
+  Switch
 }
